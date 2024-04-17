@@ -6,6 +6,11 @@ import { CreateInvoice } from '@/app/ui/invoices/buttons';
 import { Suspense } from 'react';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 interface SearchParams {
   query?: string;
